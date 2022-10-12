@@ -1,9 +1,14 @@
-specVersion: 0.0.1
-description: ''
+specVersion: 0.2.0
+name: khala-chainbridge-subquery
+version: 0.0.1
+description: 'Generic index service for Khala network'
 repository: https://github.com/Phala-Network/khala-chainbridge-subql.git
-schema: ./schema.graphql
+schema:
+  file: ./schema.graphql
 network:
   endpoint: wss://khala.api.onfinality.io/public-ws
+  genesisHash: '0xd43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d'
+  dictionary: 'https://api.subquery.network/sq/subquery/khala-dictionary'
   types:
     Address: MultiAddress
     LookupSource: MultiAddress
@@ -202,6 +207,7 @@ dataSources:
     kind: substrate/Runtime
     startBlock: 1
     mapping:
+      file: ./dist/index.js
       handlers:
         - handler: handleBlock
           kind: substrate/BlockHandler
