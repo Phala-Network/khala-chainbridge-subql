@@ -1,12 +1,6 @@
-import type {RegistryTypes, OverrideBundleDefinition} from '@polkadot/types/types'
-import { versionedKhala } from "@phala/typedefs";
+import type { OverrideBundleDefinition } from "@polkadot/types/types";
 
-// const khalaTypes: RegistryTypes = {
-//     ChainId: 'u8',
-//     BridgeChainId: 'u8',
-//     ResourceId: '[u8; 32]',
-//     DepositNonce: 'u64'
-// }
+import { versionedKhala } from "@phala/typedefs";
 
 export default {
   typesBundle: { ...versionedKhala } as OverrideBundleDefinition,
