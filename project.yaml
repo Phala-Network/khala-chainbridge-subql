@@ -17,7 +17,7 @@ network:
   endpoint: 'wss://khala.api.onfinality.io/public-ws'
   dictionary: 'https://api.subquery.network/sq/subquery/khala-dictionary'
   chaintypes:
-    file: ./src/chaintypes.js
+    file: ./dist/chaintypes.js
 dataSources:
   - name: main
     kind: substrate/Runtime
