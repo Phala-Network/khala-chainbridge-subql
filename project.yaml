@@ -25,7 +25,5 @@ dataSources:
     mapping:
       file: ./dist/index.js
       handlers:
-        - handler: handleTreasuryDeposit
-          kind: substrate/EventHandler
         - handler: handleMinerSettled
           kind: substrate/EventHandler
