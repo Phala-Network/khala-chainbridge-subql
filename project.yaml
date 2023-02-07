@@ -21,9 +21,9 @@ network:
 dataSources:
   - name: main
     kind: substrate/Runtime
-    startBlock: 2758848
+    startBlock: 3261907
     mapping:
       file: ./dist/index.js
       handlers:
-        - handler: handleMinerSettled
+        - handler: handleCirculationSettled
           kind: substrate/EventHandler
